@@ -1,0 +1,41 @@
+#scroller {
+    width: 80%;
+    height: 80%;
+    border: 2px solid green;
+    background-color: white;
+    overflow: auto;
+    margin-left: 10%;
+    padding: 1em;
+    font-family: Arial;
+    font-size: 32pt;
+    line-height: 150%;
+}
+
+.prompt {
+    display: inline-block;
+    color: navy;
+    font-family: arial;
+    font-size: 48pt;
+    align-items: center;
+    text-align: center;
+}
+
+.arrowbutton {
+    color: green;
+    font-family: wingdings;
+    font-size: 24px;
+}
+
+.button {
+    color: green;
+    font-family: Arial;
+    font-size: 24pt;
+}
+
+ .instruction {
+    color: red;
+    font-family: Arial, sans-serif;
+    font-size: 6vw;
+    margin-bottom: 1em;
+  }
+

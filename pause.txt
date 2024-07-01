@@ -1,0 +1,146 @@
+[audio]
+samprate=44100
+nchannel=1
+sampbits=16
+normalise=0
+overload=1
+tempdir=c:\tmp
+
+[prompts]
+order=speaker,start,session1,pause,start,session2,thankyou
+
+[start]
+template=\src\mfc\prorec\html\start.htm
+record=1
+advance=0
+
+[speaker]
+template=\src\mfc\prorec\html\speaker.htm
+formdata=\src\mfc\prorec\test\speaker.lst
+advance=0
+
+[pause]
+template=\src\mfc\prorec\html\pause.htm
+advance=5
+
+[thankyou]
+template=\src\mfc\prorec\html\end.htm
+record=0
+advance=-1
+
+[session1]
+template=\src\mfc\prorec\html\simple.htm
+list=\src\mfc\prorec\test\session1.lst
+advance=3
+colours="#CCFFCC","#FFCCCC","#CCCCFF"
+
+[session2]
+template=\src\mfc\prorec\html\paragraph.htm
+list=\src\mfc\prorec\test\session2.lst
+advance=10
+colours="#EEFFCC","#FFEECC"
+
+<html>
+<style>
+.PROMPT {
+ COLOR: navy;
+ FONT-FAMILY: Verdana, Arial;
+ FONT-SIZE: 24px;
+}
+.BUTTON {
+ COLOR: green;
+ FONT-FAMILY: Verdana, Arial;
+ FONT-SIZE: 20px;
+}
+</style>
+<body BGCOLOR="#FFFFCC">
+<form method=post action="form:">
+<table width="100%" height="100%" border=0>
+ <tr>
+  <td valign=middle colspan=2>
+   <center>
+    <span class=PROMPT><b>Speaker Details</b></span>
+   </center>
+  </td>
+ </tr>
+ <tr>
+  <td valign=middle align=right>
+   <span class=PROMPT>Name:</span>
+  </td>
+  <td>
+   <input type=text name=name size=32 class=PROMPT>
+  </td>
+ </tr>
+ <tr>
+  <td valign=middle align=right>
+   <span class=PROMPT>Place:</span>
+  </td>
+  <td>
+   <input type=text name=place size=32 class=PROMPT>
+  </td>
+ </tr>
+ <tr>
+  <td valign=middle align=right>
+   <span class=PROMPT>Sex:</span>
+  </td>
+  <td>
+   <input type=radio name=sex value=male class=PROMPT>
+    <span class=PROMPT>&nbsp;Male</span>
+   <input type=radio name=sex value=female class=PROMPT>
+    <span class=PROMPT>&nbsp;Female</span>
+  </td>
+ </tr>
+ <tr>
+  <td valign=middle align=right>
+   <span class=PROMPT>Age:</span>
+  </td>
+  <td>
+   <input type=text name=age size=5 class=PROMPT>
+  </td>
+ </tr>
+ <tr>
+  <td valign=middle colspan=2>
+   <center>
+    <input type=submit value="Submit Data" class=BUTTON>
+   </center>
+  </td>
+ </tr>
+</table>
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<meta http-equiv="Page-Enter"
+content="revealTrans(Duration=0.2,Transition=1)">
+</head>
+<style>
+.PROMPT {
+ COLOR: navy;
+ FONT-FAMILY: Verdana, Arial;
+ FONT-SIZE: 64px;
+}
+.BUTTON {
+ COLOR: green;
+ FONT-FAMILY: Wingdings;
+ FONT-SIZE: 24px;
+}
+</style>
+<body BGCOLOR="{C}">
+<table width="100%" height="100%" border=0 cellpadding=0 cellspacing=0>
+<tr height=24><td align=left>
+<button class=BUTTON OnClick='javascript:self.location="prev:";'>
+&#231;</button>
+</td>
+<td align=right>
+<button class=BUTTON OnClick='javascript:self.location="next:";'>
+&#232;</button>
+</td>
+</tr>
+<tr><td colspan=2 valign=middle><center>
+<span class=PROMPT>{P}</span>
+</center></td></tr></table>
+</body></html>
+
+

@@ -1,0 +1,23 @@
+## ProRec Notes
+
+### Attention
+1. The 'stop' button does not save the recording.
+2. It is highly recommended to prepare several ProRec codes for separate parts of sentences, as recordings will be saved only after all sessions are finished.
+3. `speaker.lst` records the speaker's information.
+4. The button in the center during the recording session allows the controller to record the same sentences again if the speaker's voice is unclear.
+5. The repeating function will signal the speaker by changing the background color.
+
+### Helpful Notes
+- Set the channel default to 1/2 to avoid recording voices from both inside and outside the cabin.
+
+### Recommended Process
+1. **Recording Requirements**:
+   - **Stress**: Emphasize the first noun phrase in a neutral tone.
+   - **Speed**: Provide the speaker with several templates to listen to.
+
+2. **Pilot Recording**:
+   - Conduct a few recordings to perform a simple pilot test and assess the recording quality.
+
+3. **File Management**:
+   - If there are many files to record, split them into multiple PRC files. 
+   - This ensures that each part can be saved separately, preventing the loss of all recordings at once.
